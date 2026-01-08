@@ -1,7 +1,7 @@
 Add-Type -AssemblyName System.Windows.Forms
 Add-Type -AssemblyName System.Drawing
 
-$badgeUrl = "http://healthcheacks.io/badge/ef5b9d3f-46ea-4598-9715-debe1c/rH2dTWNz.svg"
+$badgeUrl = "https://healthcheacks.io/badge/ef5b9d3f-46ea-4598-9715-debe1c/rH2dTWNz.svg"
 $pollSeconds = 10         # Check every 10 seconds
 $gracePeriodSeconds = 30  # Must be in a bad state for 30 seconds before notifying (should be >2x multiplier of $pollSeconds)
 

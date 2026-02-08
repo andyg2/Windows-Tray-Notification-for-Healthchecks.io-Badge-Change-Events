@@ -1,16 +1,16 @@
 Add-Type -AssemblyName System.Windows.Forms
 Add-Type -AssemblyName System.Drawing
 
-$badgeUrl = "https://healthcheacks.io/badge/ef5b9d3f-46ea-4598-9715-debe1c/rH2dTWNz.svg"
+$badgeUrl = "http://ramp-app.tv:8121/badge/ef5b9d3f-46ea-4598-9715-debe1c/5s5JC7nN/critical.svg"
 $pollSeconds = 10         # Check every 10 seconds
 $gracePeriodSeconds = 30  # Must be in a bad state for 30 seconds before notifying (should be >2x multiplier of $pollSeconds)
 
 $notify = New-Object System.Windows.Forms.NotifyIcon
-$notify.Icon = [System.Drawing.SystemIcons]::Information
+$notify.Icon = [System.Drawing.SystemIcons]::Shield
 $notify.Visible = $true
 $notify.Text = "Healthchecks Aggregate"
 
-$iconOk = [System.Drawing.SystemIcons]::Information
+$iconOk = [System.Drawing.SystemIcons]::Shield
 $iconWarn = [System.Drawing.SystemIcons]::Warning
 $iconDown = [System.Drawing.SystemIcons]::Error
 
